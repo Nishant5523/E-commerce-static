@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header
+{
+	height: 100vh;
+}
+.video-background
+{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+@media(min-aspect-ratio: 16/9)
+{
+	.video-background
+	{
+		width: 100%;
+		height: auto;
+	}
+}
+@media(max-aspect-ratio: 16/9)
+{
+	.video-background
+	{
+		width: auto;
+		height: 100%;
+	}
+}
+.logo
+{
+	margin: 25px;
+	height: 60px;
+	width: 100px;
+}
+.welcome-msg
+{   
+
+	position: relative;
+	text-align: center;
+	font-family: arial;
+	color: #fff;
+	top: 150px;
+}
+.welcome-msg h1
+{
+	font-size: 80px;
+	font-weight: 100;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+.btn
+{   
+	font-size: 18px;
+	color: #fff;
+	margin: 5px;
+	text-decoration: none;
+	padding: 7px 22px;
+	border: 1px solid lightcoral;
+	border-radius: 25px;
+}
+.btn-subscribe
+{
+	background: #05AFFF;
+}
+.btn-subscribe:hover
+{
+	background: coral;
+	transition: 0.8s;
+}
+.btn-comment
+{
+	background: #FF0505;
+}
+.btn-comment:hover
+{
+	background: coral;
+	transition: 0.8s;
+}
+@media only screen  and (max-widht:800px){
+	div h1 h2{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100px;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+		
+}
+#preloader
+{
+	background:#fff url(images/preloader.gif) no-repeat center center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
